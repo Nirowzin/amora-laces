@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AMORA LACES
 
-## Getting Started
+E-commerce premium com foco em conversao via WhatsApp, desenvolvido com Next.js 15, React 19, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion e Supabase.
 
-First, run the development server:
+## Stack
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- shadcn/ui (componentes base com Radix)
+- Framer Motion
+- Supabase (Auth + Postgres + Storage)
+- Zustand (sacola)
+
+## Funcionalidades principais
+
+- Home premium completa com hero full-screen e secoes de conversao
+- Catalogo com pesquisa instantanea e filtros por categoria, cor, comprimento, material e faixa de preco
+- Infinite scroll / carregamento progressivo de cards
+- Pagina de produto com galeria, lightbox, video e produtos relacionados
+- Drawer de compra sem sair da pagina com mensagem automatica para WhatsApp
+- Sacola multi-itens com fechamento de pedido via WhatsApp
+- Botao flutuante de WhatsApp sempre visivel
+- Painel administrativo dark com login Supabase
+- Rota admin secreta configuravel por variavel de ambiente
+- SEO completo: Metadata, Open Graph, JSON-LD, Schema Product, sitemap e robots
+
+## Setup local
+
+1. Instale dependencias:
+
+```bash
+npm install
+```
+
+2. Crie o arquivo `.env.local` baseado em `.env.example`.
+
+3. Rode o schema SQL no Supabase:
+
+- Arquivo: `supabase/schema.sql`
+
+4. Inicie em modo dev:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variaveis de ambiente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_PUBLIC_ADMIN_SECRET_PATH=atelier-amora-privado
+NEXT_PUBLIC_WHATSAPP_NUMBER=5511960291282
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Acesso ao painel admin
 
-## Learn More
+- URL secreta: `/{NEXT_PUBLIC_ADMIN_SECRET_PATH}`
+- Exemplo: `/atelier-amora-privado`
+- A rota `/admin` retorna 404 para ocultacao.
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app` rotas e SEO
+- `src/components` layout, secoes, produto e ui
+- `src/lib` tipos, dados, Supabase e utilitarios
+- `src/store` estado global da sacola
+- `supabase/schema.sql` estrutura inicial do banco
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy (Netlify)
 
-## Deploy on Vercel
+1. Conecte o repositorio no Netlify.
+2. Configure build command: `npm run build`
+3. Configure publish directory: `.next`
+4. Configure as variaveis de ambiente no painel do Netlify.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Lighthouse
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projeto otimizado para atingir score acima de 95 com imagens otimizadas, metadados completos e UI de alto desempenho.
