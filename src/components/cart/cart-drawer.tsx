@@ -59,7 +59,7 @@ export function CartDrawer() {
                       </p>
                     </div>
                     <Button size="icon" variant="ghost" onClick={() => remove(item.lineId)}>
-                      <Trash2 className="size-4 text-[#7f263d]" />
+                      <Trash2 className="size-4 text-[#c45b7a]" />
                     </Button>
                   </div>
 

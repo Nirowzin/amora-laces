@@ -203,7 +203,7 @@ export default function AdminPage() {
                   <button
                     key={product.id}
                     onClick={() => setEditing(product)}
-                    className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-3 text-left transition hover:border-[#b8904f]/40"
+                    className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-3 text-left transition hover:border-[#d4a56b]/40"
                   >
                     <p className="font-medium">{product.name}</p>
                     <p className="text-xs text-white/60">{product.code}</p>

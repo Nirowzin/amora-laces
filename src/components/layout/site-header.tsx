@@ -27,16 +27,16 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-[#101010]/80 md:flex">
-          <Link href="/catalogo" className="transition hover:text-[#7f263d]">
+          <Link href="/catalogo" className="transition hover:text-[#c45b7a]">
             Catalogo
           </Link>
-          <Link href="/#novidades" className="transition hover:text-[#7f263d]">
+          <Link href="/#novidades" className="transition hover:text-[#c45b7a]">
             Novidades
           </Link>
-          <Link href="/#beneficios" className="transition hover:text-[#7f263d]">
+          <Link href="/#beneficios" className="transition hover:text-[#c45b7a]">
             Beneficios
           </Link>
-          <Link href="/#faq" className="transition hover:text-[#7f263d]">
+          <Link href="/#faq" className="transition hover:text-[#c45b7a]">
             FAQ
           </Link>
         </nav>
@@ -54,7 +54,7 @@ export function SiteHeader() {
             <ShoppingBag className="size-4" />
             Sacola
             {totalItems > 0 && (
-              <span className="absolute -right-1 -top-1 inline-flex size-5 items-center justify-center rounded-full bg-[#7f263d] text-[11px] text-white">
+              <span className="absolute -right-1 -top-1 inline-flex size-5 items-center justify-center rounded-full bg-[#c45b7a] text-[11px] text-white">
                 {totalItems}
               </span>
             )}

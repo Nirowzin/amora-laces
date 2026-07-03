@@ -48,7 +48,7 @@ export function ProductCard({ product }: { product: Product }) {
             {product.promoPrice ? (
               <p className="text-xs text-[#101010]/40 line-through">{formatBRL(product.price)}</p>
             ) : null}
-            <p className="text-lg font-semibold text-[#7f263d]">{formatBRL(price)}</p>
+            <p className="text-lg font-semibold text-[#c45b7a]">{formatBRL(price)}</p>
           </div>
 
           <Button asChild size="sm" variant="gold">

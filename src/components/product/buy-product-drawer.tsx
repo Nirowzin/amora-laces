@@ -61,7 +61,7 @@ export function BuyProductDrawer({ product, open, setOpen }: Props) {
             <div>
               <h3 className="font-serif text-3xl text-[#101010]">{product.name}</h3>
               <p className="text-sm text-[#101010]/60">Codigo: {product.code}</p>
-              <p className="text-lg font-semibold text-[#7f263d]">{formatBRL(effectivePrice)}</p>
+              <p className="text-lg font-semibold text-[#c45b7a]">{formatBRL(effectivePrice)}</p>
             </div>
 
             <div className="space-y-3 rounded-2xl border border-[#101010]/10 bg-white/70 p-4">

@@ -22,7 +22,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="mb-3 text-sm uppercase tracking-[0.2em] text-[#b8904f]">Institucional</h4>
+          <h4 className="mb-3 text-sm uppercase tracking-[0.2em] text-[#d4a56b]">Institucional</h4>
           <ul className="space-y-2 text-sm text-[#f7f3ef]/80">
             <li>
               <Link href="/#beneficios">Diferenciais</Link>
@@ -37,7 +37,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="mb-3 text-sm uppercase tracking-[0.2em] text-[#b8904f]">Catalogo</h4>
+          <h4 className="mb-3 text-sm uppercase tracking-[0.2em] text-[#d4a56b]">Catalogo</h4>
           <ul className="space-y-2 text-sm text-[#f7f3ef]/80">
             <li>Front Laces</li>
             <li>Wigs Premium</li>
@@ -47,7 +47,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="mb-3 text-sm uppercase tracking-[0.2em] text-[#b8904f]">Contato</h4>
+          <h4 className="mb-3 text-sm uppercase tracking-[0.2em] text-[#d4a56b]">Contato</h4>
           <ul className="space-y-2 text-sm text-[#f7f3ef]/80">
             <li>WhatsApp: (11) 96029-1282</li>
             <li>Instagram: @amoralaces</li>

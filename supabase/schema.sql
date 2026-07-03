@@ -41,8 +41,8 @@ create table if not exists public.site_settings (
   hero_title text,
   hero_subtitle text,
   primary_color text default '#101010',
-  accent_color text default '#7f263d',
-  gold_color text default '#b8904f',
+  accent_color text default '#c45b7a',
+  gold_color text default '#d4a56b',
   updated_at timestamptz not null default now()
 );
 

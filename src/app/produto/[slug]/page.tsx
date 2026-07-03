@@ -78,7 +78,7 @@ export default async function ProductPage({ params }: Props) {
 
           <div>
             {product.promoPrice ? <p className="text-sm text-[#101010]/40 line-through">{formatBRL(product.price)}</p> : null}
-            <p className="text-3xl font-semibold text-[#7f263d]">{formatBRL(product.promoPrice ?? product.price)}</p>
+            <p className="text-3xl font-semibold text-[#c45b7a]">{formatBRL(product.promoPrice ?? product.price)}</p>
           </div>
 
           <p className="text-[#101010]/75">{product.description}</p>

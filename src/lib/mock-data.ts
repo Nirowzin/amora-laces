@@ -10,8 +10,8 @@ export const PRODUCTS: Product[] = [
     material: "Cabelo Humano",
     colors: ["Preto Onix", "Castanho Avela", "Ruivo Marsala"],
     lengths: ["30cm", "40cm", "55cm"],
-    price: 899.9,
-    promoPrice: 799.9,
+    price: 200,
+    promoPrice: 200,
     shortDescription: "Acabamento invisivel com textura sedosa e linha frontal ultra natural.",
     description:
       "Front lace premium para quem deseja movimento leve, brilho sofisticado e acabamento impecavel para uso diario ou eventos.",
@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     material: "Fibra Premium",
     colors: ["Loiro Champagne", "Loiro Areia"],
     lengths: ["35cm", "50cm"],
-    price: 429.9,
+    price: 200,
     shortDescription: "Fibra importada com brilho equilibrado e toque macio.",
     description:
       "Wig de fibra importada com recorte moderno e visual editorial, ideal para transformacoes rapidas com resultado luxuoso.",
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     material: "Fibra Premium",
     colors: ["Preto Onix", "Castanho Escuro"],
     lengths: ["30cm", "40cm"],
-    price: 389.9,
+    price: 200,
     shortDescription: "Leve, elegante e de aplicacao rapida para o dia a dia.",
     description:
       "Front lace em fibra premium de acabamento discreto, perfeita para quem busca praticidade sem abrir mao de um visual refinado.",
@@ -80,7 +80,7 @@ export const PRODUCTS: Product[] = [
     material: "Cabelo Humano",
     colors: ["Castanho Avela", "Chocolate", "Preto Onix"],
     lengths: ["40cm", "55cm", "70cm"],
-    price: 1299.9,
+    price: 200,
     shortDescription: "Modelagem de atelier com caimento de alta costura.",
     description:
       "Peruca premium produzida com cabelo humano selecionado para quem exige performance, durabilidade e uma presenca elegante.",
@@ -104,7 +104,7 @@ export const PRODUCTS: Product[] = [
     material: "Acessorios",
     colors: ["Dourado", "Preto"],
     lengths: [],
-    price: 149.9,
+    price: 200,
     shortDescription: "Kit profissional para prolongar a vida util da lace.",
     description:
       "Conjunto com escova premium, fita, spray fixador e bolsa acetinada para preservar brilho, textura e acabamento.",
@@ -122,7 +122,7 @@ export const PRODUCTS: Product[] = [
     material: "Fibra Premium",
     colors: ["Preto Onix", "Castanho Escuro"],
     lengths: ["45cm", "60cm"],
-    price: 679.9,
+    price: 200,
     shortDescription: "Textura aveludada e visual glam para ocasioes especiais.",
     description:
       "Wig premium com movimento impecavel, densidade equilibrada e acabamento para compor looks sofisticados com conforto.",

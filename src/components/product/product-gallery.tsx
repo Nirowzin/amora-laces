@@ -22,7 +22,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
           <button
             key={image}
             className={`relative aspect-square overflow-hidden rounded-2xl border ${
-              active === index ? "border-[#7f263d]" : "border-white/40"
+              active === index ? "border-[#c45b7a]" : "border-white/40"
             }`}
             onClick={() => setActive(index)}
           >

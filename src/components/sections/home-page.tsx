@@ -26,7 +26,7 @@ export function HomePage() {
             <Badge variant="premium" className="mb-4">Luxo em cada detalhe</Badge>
             <h1 className="font-serif text-5xl leading-tight text-[#101010] sm:text-6xl md:text-7xl">
               Elegancia de atelier
-              <span className="block text-[#7f263d]">para sua melhor versao</span>
+              <span className="block text-[#c45b7a]">para sua melhor versao</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-[#101010]/70 sm:text-lg">
               Front laces e wigs premium com acabamento impecavel, curadoria sofisticada e atendimento consultivo para voce comprar com seguranca no WhatsApp.
@@ -96,7 +96,7 @@ export function HomePage() {
               transition={{ duration: 0.45, delay: idx * 0.08 }}
               className="rounded-3xl border border-white/50 bg-white/70 p-6"
             >
-              <Icon className="mb-3 size-5 text-[#7f263d]" />
+              <Icon className="mb-3 size-5 text-[#c45b7a]" />
               <h3 className="font-serif text-2xl text-[#101010]">{title}</h3>
               <p className="mt-2 text-sm text-[#101010]/65">{STORE_BENEFITS[idx] || STORE_BENEFITS[0]}</p>
             </motion.div>
@@ -107,7 +107,7 @@ export function HomePage() {
       <section className="mx-auto mt-20 w-full max-w-7xl px-4 sm:px-6 lg:px-8" id="instagram">
         <div className="mb-6 flex items-center justify-between">
           <h2 className="font-serif text-4xl text-[#101010]">Instagram</h2>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-sm text-[#7f263d]">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-sm text-[#c45b7a]">
             Ver perfil
           </a>
         </div>
@@ -125,7 +125,7 @@ export function HomePage() {
             <Card key={item.name}>
               <CardContent className="p-6">
                 <p className="text-sm text-[#101010]/75">"{item.text}"</p>
-                <p className="mt-4 text-sm font-medium text-[#7f263d]">{item.name}</p>
+                <p className="mt-4 text-sm font-medium text-[#c45b7a]">{item.name}</p>
               </CardContent>
             </Card>
           ))}

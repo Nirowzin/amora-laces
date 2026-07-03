@@ -19,7 +19,7 @@ export const CATEGORIES = [
 export const SITE_COLORS = {
   ivory: "#f7f3ef",
   black: "#101010",
-  gold: "#b8904f",
-  marsala: "#7f263d",
+  gold: "#d4a56b",
+  marsala: "#c45b7a",
   softGray: "#d7d3cf",
 };
