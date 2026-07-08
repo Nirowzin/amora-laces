@@ -50,7 +50,7 @@ export function HomePage() {
             className="relative overflow-hidden rounded-[2.2rem] border border-white/40 bg-white/25 p-4 shadow-[0_30px_100px_rgba(16,16,16,0.18)] backdrop-blur-md"
           >
             <img
-              src="/produtos/produto-1.jpeg"
+              src="/novidades/WhatsApp Image 2026-07-08 at 08.58.29 (1).jpeg"
               alt="Modelo usando lace premium"
               className="h-[58vh] w-full rounded-[1.6rem] object-cover"
             />
