@@ -1,6 +1,60 @@
 import { Product } from "@/lib/types";
 
+const imageCatalogEntries = [
+  "/novidades/nova-01.jpeg",
+  "/novidades/nova-02.jpeg",
+  "/novidades/nova-03.jpeg",
+  "/novidades/nova-04.jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.29 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.29.jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.30 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.30 (3).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.31 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.32 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.32 (2).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.32 (3).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.32 (4).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.32 (5).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.32.jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.33 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.33 (2).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.33 (3).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.33 (4).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.33 (5).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.33.jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.34 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.34 (2).jpeg",
+  "/novidades/WhatsApp Image 2026-07-08 at 08.58.34.jpeg",
+  "/novidades/WhatsApp Image 2026-07-05 at 16.58.18.jpeg",
+  "/novidades/WhatsApp Image 2026-07-05 at 16.58.19 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-05 at 16.58.19 (2).jpeg",
+  "/novidades/WhatsApp Image 2026-07-05 at 16.58.19.jpeg",
+];
+
+const imageCatalogProducts: Product[] = imageCatalogEntries.map((image, index) => ({
+  id: `image-${index + 1}`,
+  code: `AML-IMG-${String(index + 1).padStart(3, "0")}`,
+  slug: `produto-imagem-${index + 1}`,
+  name: `Produto da imagem ${index + 1}`,
+  category: "Novidades da coleção",
+  material: "Fibra Premium",
+  colors: ["Preto Onix", "Castanho Escuro"],
+  lengths: ["30cm", "40cm"],
+  price: 200,
+  promoPrice: 200,
+  shortDescription: "Peça da coleção de novidades com imagem exclusiva da pasta de uploads.",
+  description:
+    "Produto criado automaticamente a partir das imagens da pasta de novidades para compor o catálogo completo.",
+  specifications: ["Imagem exclusiva", "Preço fixo", "Catálogo completo", "Disponível para pedido"],
+  images: [image],
+  isNew: true,
+  isPremium: true,
+  isFeatured: index < 4,
+  views: 300 + index * 10,
+}));
+
 export const PRODUCTS: Product[] = [
+  ...imageCatalogProducts,
   {
     id: "1",
     code: "AML-FL-001",
