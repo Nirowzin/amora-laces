@@ -31,6 +31,16 @@ const imageCatalogEntries = [
   "/novidades/WhatsApp Image 2026-07-05 at 16.58.19.jpeg",
 ];
 
+const newestProductImages = [
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.31 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.31 (2).jpeg",
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.31 (3).jpeg",
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.31 (4).jpeg",
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.31 (5).jpeg",
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.32 (1).jpeg",
+  "/novidades/WhatsApp Image 2026-07-22 at 14.40.32.jpeg",
+];
+
 const professionalWigNames = [
   "Peruca Aurora Luxe",
   "Peruca Velvet Noir",
@@ -81,7 +91,29 @@ const imageCatalogProducts: Product[] = imageCatalogEntries.slice(3).map((image,
   views: 300 + index * 10,
 }));
 
+const newestProducts: Product[] = newestProductImages.map((image, index) => ({
+  id: `novos-${index + 1}`,
+  code: `AML-NP-${String(index + 1).padStart(3, "0")}`,
+  slug: `front-lace-premium-13x6-show-${index + 1}`,
+  name: `Front Lace Premium 13x6 ${String(index + 1).padStart(2, "0")}`,
+  category: "Front Laces de Fibra Premium",
+  material: "Fibra Premium",
+  colors: ["Adere Creme"],
+  lengths: ["13x6"],
+  price: 499,
+  promoPrice: 499,
+  shortDescription: "Front lace premium 13x6 com alcas reguladoras (sob encomenda).",
+  description: "Peca exclusiva para show, com acabamento premium e conforto para uso prolongado.",
+  specifications: ["13x6", "Adere creme", "Aceita temperatura", "Alcas reguladoras", "Sob encomenda"],
+  images: [image],
+  isNew: true,
+  isPremium: true,
+  isFeatured: index < 3,
+  views: 900 + index * 15,
+}));
+
 export const PRODUCTS: Product[] = [
+  ...newestProducts,
   ...imageCatalogProducts,
   {
     id: "1",

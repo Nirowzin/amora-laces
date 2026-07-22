@@ -14,6 +14,7 @@ const featured = PRODUCTS.filter((item) => item.isFeatured).slice(0, 3);
 const news = PRODUCTS.filter((item) => item.isNew).slice(0, 3);
 const sales = PRODUCTS.filter((item) => item.isOnSale).slice(0, 3);
 const mostViewed = [...PRODUCTS].sort((a, b) => b.views - a.views).slice(0, 3);
+const newestDrop = PRODUCTS.filter((item) => item.code.startsWith("AML-NP-")).slice(0, 7);
 
 export function HomePage() {
   return (
@@ -76,6 +77,7 @@ export function HomePage() {
       </section>
 
       <ProductShowcase id="destaques" title="Produtos em destaque" items={featured} />
+      <ProductShowcase id="novos-produtos" title="Novos produtos" items={newestDrop} />
       <ProductShowcase id="novidades" title="Novidades" items={news} />
       <ProductShowcase id="promocoes" title="Promocoes" items={sales} />
       <ProductShowcase id="mais-vistos" title="Mais visualizados" items={mostViewed} />
